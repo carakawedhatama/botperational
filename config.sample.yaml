@@ -1,0 +1,46 @@
+app: "botperational"
+appVer: $[APP_VERSION]
+env: ${ENVIRONMENT}
+
+discord:
+  webhookUrl:
+    onLeave: ${ON_LEAVE_WEBHOOK_URL}
+    onBirthday: ${ON_BIRTHDAY_WEBHOOK_URL}
+  avatarUrl:
+    leaveAvatar: "https://domain.com/your-image-file.png"
+    workAvatar: "https://domain.com/your-image-file.png"
+    birthdayAvatar: "https://domain.com/your-image-file.png"
+
+http:
+  port: 8000
+  writeTimeout: 30
+  readTimeout: 30
+
+log:
+  fileLocation: "logs"
+  fileTDRLocation: "logs"
+  fileMaxSize: 50 # megabytes
+  fileMaxBackup: 10
+  fileMaxAge: 30 # days
+  stdout: true
+
+database:
+  host: ${DATABASE_HOST}
+  port: ${DATABASE_PORT}
+  name: ${DATABASE_NAME}
+  user: ${DATABASE_USERNAME}
+  password: ${DATABASE_PASSWORD}
+  sslmode: disable
+  maxIdleConn: 10
+  connMaxLifetime: 1 # in hours
+  maxOpenConn: 100
+  transactionIsolationLevel: ${DATABASE_TRANSACTION_ISOLATION_LEVEL}
+  transactionReadOnly: ${DATABASE_TRANSACTION_READONLY}
+
+scheduler:
+  intervalInSecond: "1000"
+  multiTime: "09:44;12:01;23:59"
+
+data: #to maintain the performance of the application
+  limitUnprocessedPPS: 100
+  limitUnprocessedEmployee: 100
