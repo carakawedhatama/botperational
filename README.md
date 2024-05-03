@@ -4,7 +4,7 @@
 For now, it provide who is on leave and on birthday today.
 
 ## Flow
-[!botperational's swimlanes](assets/botperational-swimlanes.png)
+![botperational's swimlanes](assets/botperational-swimlanes.png)
 
 It has a simple flow between the service, the database storage, and Discord as the consumer.
 For short, once the service has acquire the needed data, it would sent the data to Discord via webhook URL.
@@ -12,8 +12,10 @@ For short, once the service has acquire the needed data, it would sent the data 
 ### Story
 Starting with repeated questions like "is he/she is taking a leave?" or "is there any employee that taking a leave today?"
 And also the accidentally-forgoten birthday information that usually done by the HR team manually, may lead the employee feels abandoned.
+
 Based on those stories, I came up with a simple idea that "why not blasting the leave and birthday information on Discord since we're actually using it as our main communication platform?"
 Then, here we are, `botperational` is born!
+
 For now, it only provide the leave and birthday data. But, not to mention there are lots of operational information (and action!) that would be implemented in the near future!
 So, stay tuned for the updates!
 
