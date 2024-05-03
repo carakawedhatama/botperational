@@ -1,5 +1,5 @@
 # simple makefile
-NAME=main
+NAME=main.exe
 COVERAGE_MIN=50.0
 
 ## check: Check quality code in sonarqube.
